@@ -1,0 +1,229 @@
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+}
+p{
+    font-size: 0.8em;
+}
+/* navbar */
+.bg-light{
+    background-color: blue;
+}
+.bg-blue  { 
+    background-color: var(--blue) 
+}
+.nav-menu{
+    margin: 1em;
+}
+
+/* content */
+.content{
+    margin-top: 1%;
+}
+/* kategori, area, harga */
+.category-fish{
+    margin-top: -7%;
+    padding-bottom: -10%;
+}
+.btn-filter{
+    width: 100%;
+    font-size: 1em;
+}
+
+/* list ikan */
+/* card */
+.nominal-harga{
+    color: deepskyblue;
+}
+.spesifikasi-pertama{
+    margin-top: 1em;
+}
+.spesifikasi{
+    margin-left: 1em;
+}
+.btn-beli{
+    width: 78%;
+}
+.btn-basket{
+    width: 20%;
+    float: right;
+}
+.card{
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+/* detail ikan html */
+/* content */
+.img-detail-ikan{
+    width: 100%
+}
+.img-kecil{
+    width: 20%;
+}
+.bintang{
+    width: 30%;
+    margin-top: -3%;
+    margin-right: 3%
+}
+.collapse-selengkapnya{
+    font-size: 1em;
+}
+.btn-beli-detail{
+    width: 100%;
+}
+.btn-basket-detail{
+    width: 47%;
+}
+.btn-hubungi-detail{
+    width: 47%;
+    float: right;
+}
+.bintang-penjual{
+    width: 50%;
+}
+.btn-trash{
+    float: right;
+    width: 2%;
+}
+.img-ikan-keranjang{
+    width: 100%;
+}
+.harga-keranjang{
+    margin-top: 10%;
+}
+.btn-trash-list{
+    width: 7%;
+    float: right;
+}
+
+/* register-form html */
+.icon-mari-form{
+    width: 100%;
+    margin-top: -2%;
+}
+.t-mari{
+    color: black
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.btn-daftar{
+    width: 100%;
+}
+
+/* start index */
+.btn-daftar-nav{
+    border: solid;
+    color: black;
+    background-color: white;
+    border-color: white;
+}
+.btn-daftar-nav:hover{
+    border: solid;
+    border-color: black;
+    background-color: whitesmoke;
+    color: blue;
+}
+.btn-masuk{
+    border: solid;
+    border-color: white;
+    color: white;
+}
+.btn-masuk:hover{
+    border: solid;
+    border-color: black;
+    background-color: whitesmoke;
+    color: blue;
+}
+
+/* start transaksi */
+.txt-pemesanan{
+    margin: 1%;
+}
+/* end transakasi */
+
+/* start fish today */
+.center-cropped {
+    width: 100%;
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* .thumbnail {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+} */
+/* .thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+    width: 100%;
+    height: auto;
+} */
+.crop {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+    
+.crop img {
+      display: block;
+      min-width: 100%;
+      min-height: 100%;
+      margin: auto;
+      position: absolute;
+      top: -100%;
+      right: -100%;
+      bottom: -100%;
+      left: -100%;
+}
+.item img {
+    width:100%;
+}
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+@media screen and (max-width: 768px) {
+
+    #content-desktop {display: none;}
+    #content-mobile {display: block;}
+
+}
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 200%;
+  width: 200%;
+  outline: gray;
+  background-size: 100%, 100%;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-image: none;
+  padding: 20px;
+} */
+
+.deskripsi-berita{
+    font-size: 1.3em;
+}
+
+/* start open tender */
+.tender-p{
+    font-size: 1em
+}
+/* end open tender */
+
+

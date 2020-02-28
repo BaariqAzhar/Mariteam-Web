@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mariteam</title>
+
+    <!-- start g icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- end g icon -->
+</head>
+
+<body>
+    <!-- start script template -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- end script template -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-lg">
+
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">
+                <img src="logo-lsV3.svg" width="250" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons text-light border-light">
+                    expand_more
+                </i>
+            </button>
+
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-bold fo" href="#"><u>Market</u><span class="sr-only">(current)</span></a>
+                        </li>
+                        <li cla ss="nav-item">
+                            <a class="nav-link text-dark" href="fish-today-list.html">Fish Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="open-tender-data-diri.html">Crowd Fishing</a>
+                        </li>
+                        <li>
+                            &nbsp&nbsp&nbsp
+                        </li>
+                    </ul>
+                    <a class="navbar-brand pertama" href="keranjang.html">
+                        <img src="001-shopping-basket.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="transaksi.html">
+                        <img src="002-secure.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="001-user.png" width="40" height="40" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <div class="container content">
+        <div class="row">
+
+            <!-- start kategori, area, harga -->
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <!-- start kategori -->
+                <div class="accordion" id="accordionExample">
+                    <h6>Kategori</h6>
+                    <!-- start ikan laut -->
+                    <div class="card border-0">
+                        <div class="card-header bg-transparent p-0" id="headingOne">
+                            <h5 class="mb-0">
+                                <i class="material-icons">
+                                    expand_more
+                                </i>
+                                <button class="btn btn-link text-dark category-fish" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Ikan Laut
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body p-0">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1A">
+                                    <label class="custom-control-label" for="check-cat1A">Tongkol</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1B">
+                                    <label class="custom-control-label" for="check-cat1B">Cakalang</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1C">
+                                    <label class="custom-control-label" for="check-cat1C">Tuna</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1D">
+                                    <label class="custom-control-label" for="check-cat1D">Teri</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1E">
+                                    <label class="custom-control-label" for="check-cat1E">Kakap Merah</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1F">
+                                    <label class="custom-control-label" for="check-cat1F">Kembung</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1G">
+                                    <label class="custom-control-label" for="check-cat1G">Barakuda</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1H">
+                                    <label class="custom-control-label" for="check-cat1H">Baronang</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1I">
+                                    <label class="custom-control-label" for="check-cat1I">Tenggiri</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="check-cat1J">
+                                    <label class="custom-control-label" for="check-cat1J">Belenak</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ikan laut -->
+                    <!-- start ikan tambak -->
+                    <div class="card border-0">
+                        <div class="card-header bg-transparent p-0" id="headingTwo">
+                            <h5 class="mb-0">
+                                <i class="material-icons">
+                                    expand_more
+                                </i>
+                                <button class="btn btn-link text-dark category-fish" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    Ikan Tambak
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body p-0">
+                                <!-- Bandeng, bawal, lele, patin, mujair, gurame, mas, nilla -->
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Udang</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                    <label class="custom-control-label" for="customCheck2">Bandeng</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Lele</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Patin</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Mujair</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Gurame</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Mas</label>
+                                </div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                    <label class="custom-control-label" for="customCheck3">Nilla</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end ikan tambak -->
+                </div>
+                <!-- end kategori -->
+                <!-- start area  -->
+                <h6>Area Pengiriman</h6>
+                <select class="form-control form-control-sm">
+                    <option>Malang, Jawa Timur</option>
+                    <option>Sidoarjo, Jawa Timur</option>
+                    <option>Trengalek, Jawa Timur</option>
+                    <option>Lamongan, Jawa Timur</option>
+                </select>
+                <!-- end area -->
+                <!-- start harga -->
+                <h6 class="mt-2">Harga</h6>
+                <input class="form-control form-control-sm mb-1" type="text" placeholder="Rp Minimal">
+                <input class="form-control form-control-sm" type="text" placeholder="Rp Maksimal">
+                <!-- end harga -->
+                <!-- start button filter -->
+                <a type="button" class="btn btn-info btn-filter shadow-lg mt-2 mb-3 text-light">FILTER</a>
+                <!-- end button filter -->
+            </div>
+            <!-- end kategori, area, harga -->
+
+            <!-- start list ikan -->
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+
+                <!-- start row -->
+                <div class="row">
+                    <!-- start list column 1 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="Ikan-Tongkol.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Tongkol</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">300.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 1 -->
+
+                    <!-- start list column 2 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="ikan-kakap.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Kakap</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">600.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 2 -->
+
+                    <!-- start list column 3 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="ikan-cakalang.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Cakalang</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">310.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 3 -->
+                </div>
+                <!-- end row -->
+                <!-- start row -->
+                <div class="row">
+                    <!-- start list column 1 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="ikan-kembung.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Kembung</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">400.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 1 -->
+
+                    <!-- start list column 2 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="ikan-tenggiri.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Tenggiri</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">900.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 2 -->
+
+                    <!-- start list column 3 -->
+                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                        <!-- start card 1 -->
+                        <div class="card shadow-sm">
+                            <a href="detail-ikan.html">
+                                <img class="card-img-top" src="Ikan-Tongkol-v5.jpg" alt="Card image cap">
+                            </a>
+                            <div class="card-body">
+                                <a href="detail-ikan.html" class="text-dark">
+                                    <h6 class="font-weight-bold text-primary">Ikan Tongkol</h6>
+                                    <h6 class="d-inline">Rp</h6>
+                                    <h2 class="d-inline nominal-harga">300.000</h2>
+                                    <h6 class="d-inline">/ 10 Kg</h6>
+                                    <div class="spesifikasi spesifikasi-pertama">
+                                        <img class="d-inline" src="001-cube-with-arrows.png" width="20" alt="">
+                                        <p class="d-inline">Ukuran : 250 gr - 270</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="002-order.png" width="20" alt="">
+                                        <p class="d-inline">Minimal Order : 30 Kg</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="003-map-location.png" width="20" alt="">
+                                        <p class="d-inline">Asal : P. Sendangbiru, Malang, Jawa Timur</p>
+                                    </div>
+                                    <div class="spesifikasi">
+                                        <img class="d-inline" src="004-fishing.png" width="20" alt="">
+                                        <p class="d-inline">PT Maju Sentosa, Malang</p>
+                                    </div>
+                                </a>
+                                <div>
+                                    <a href="keranjang.html" type="button" class="btn btn-primary d-inline btn-beli shadow-lg mt-2 rounded">
+                                        BELI
+                                    </a>
+                                    <a href="" type="button" class="btn btn-info d-inline btn-basket shadow-lg mt-2 rounded">
+                                        <img src="001-shopping-basket.png" width="20" alt="" srcset="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card 1 -->
+                    </div>
+                    <!-- end list column 3 -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end list ikan -->
+        </div>
+    </div>
+    <!-- end content -->
+
+</body>
+
+</html>

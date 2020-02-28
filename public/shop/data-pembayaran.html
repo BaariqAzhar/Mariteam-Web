@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap helper -->
+    <!-- Bootstrap Form Helpers -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css"
+        integrity="sha256-v8+xOYOnVjQoSDMOqD0bqGEifiFCcuYleWkx2pCYsVU=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mariteam</title>
+</head>
+
+<body>
+    <!-- start script template -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Form Helpers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"
+        integrity="sha256-H7Mu9l17V/M6Q1gDKdv27je+tbS2QnKmoNcFypq/NIQ=" crossorigin="anonymous"></script>
+    <!-- end script template -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-lg">
+
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">
+                <img src="logo-lsV3.svg" width="250" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons text-light border-light">
+                    expand_more
+                </i>
+            </button>
+
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item active"> <a class="nav-link text-dark fo" href="list-ikan.html">Market<span
+                                    class="sr-only">(current)</span></a> </li>
+                        <li cla ss="nav-item">
+                            <a class="nav-link text-dark" href="fish-today-list.html">Fish Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="open-tender-data-diri.html">Crowd Fishing</a>
+                        </li>
+                        <li>
+                            &nbsp&nbsp&nbsp
+                        </li>
+                    </ul>
+                    <a class="navbar-brand pertama" href="keranjang.html">
+                        <img src="001-shopping-basket.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="transaksi.html">
+                        <img src="002-secure.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="001-user.png" width="40" height="40" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <div class="container content">
+        <h3>Data Pembayaran</h3>
+        <div class="row">
+            <div class="border rounded border-grey col-md-6 m-2 text-left">
+                <p class="border-bottom pt-2 pb-2 border-dark m-2"> Pilih Metode Pembayaran </p>
+                <div class="custom-control custom-checkbox text-left" style="">
+                    <input type="checkbox" id="check-pem1" class="custom-control-input"> <label
+                        class="custom-control-label m-2" for="check-pem1">Pakai Saldo Dompet Mariteam</label>
+                </div>
+                <div>
+                    <table class="mx-2 mt-0">
+                        <tbody>
+                            <tr>
+                                <td class="text-left w-50">Isi Dompet Mariteam</td>
+                                <td class=""> : </td>
+                                <td class="">Rp</td>
+                                <td id="saldo-dompet" class="w-50">500.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <table class="mx-2 mt-1">
+                        <tbody>
+                            <tr class="w-100">
+                                <td class=""><button type="button" class="btn btn-primary d-inline btn-plus w-100"
+                                        id="btn-plus">-</button>
+                                </td>
+                                <td>Rp</td>
+                                <td class="w-50"> <input type="text" id="nominal-bayar"
+                                        class="w-100 h-100 border-bottom" value="500.000"></td>
+                                <td class=""><button type="button" class="btn btn-primary d-inline btn-min w-100"
+                                        id="btn-min">+</button>
+                                </td>
+                                <td class=""><button type="button" class="btn btn-primary d-inline btn-max w-100"
+                                        id="btn-min" style="">MAX</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="custom-control custom-checkbox text-left" style="">
+                    <input type="checkbox" id="check-pem2" class="custom-control-input"> <label
+                        class="custom-control-label m-2" for="check-pem2">Transfer Bank</label>
+                </div>
+                <div class="mx-1">
+                    <i><img src="bca.jpg" width="100px"></i>
+                    <i><img src="mandiri.jpg" width="100px"></i>
+                    <i><img src="mandiri_syariah.jpg" width="100px"></i>
+                    <i><img src="bni.png" width="100px"></i>
+                    <i><img src="bri.jpg" width="100px"></i>
+                </div>
+            </div>
+            <div class="border rounded border-grey m-2 col-md-5">
+                <p class="border-bottom pt-2 pb-2 border-dark m-2" id="lb-detail-pembeli">Detail Pembeli</p>
+                <table class="m-2">
+                    <tbody>
+                        <tr>
+                            <td class="py-1 w-50" style="" id="lb-total1">Total Harga Ikan</td>
+                            <td class=""> : </td>
+                            <td> Rp </td>
+                            <td id="total-harga-ikan" class="w-75"> 1.200.000 </td>
+                        </tr>
+                        <tr class="border-bottom border-dark">
+                            <td class="py-1" id="lb-total2">Total Pengiriman</td>
+                            <td> : </td>
+                            <td> Rp </td>
+                            <td id="total-pengiriman" class="">&nbsp&nbsp&nbsp&nbsp&nbsp70.000 </td>
+                        </tr>
+                        <tr>
+                            <td class="py-1" style="" id="lb-total3">Total Biaya Pengiriman</td>
+                            <td> : </td>
+                            <td> Rp </td>
+                            <td id="total-biaya"> 1.270.000 </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="m-2">
+                    <a href="struk.html" type="button"
+                        class="btn btn-primary d-inline btn-bayar btn-block shadow m-0 mt-4" id="btn-bayar">
+                        BAYAR
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+</body>
+
+</html>

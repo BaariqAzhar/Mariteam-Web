@@ -1,0 +1,1117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- bootstrap helper -->
+    <!-- Bootstrap Form Helpers -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/css/bootstrap-formhelpers.min.css"
+        integrity="sha256-v8+xOYOnVjQoSDMOqD0bqGEifiFCcuYleWkx2pCYsVU=" crossorigin="anonymous" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Mariteam</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- start css fish today -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="https://static.pingendo.com/bootstrap/bootstrap-4.1.3.css">
+    <link rel="icon" type="img/png" href="img/icon-mariteam.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <style type="text/css">
+        .carousel {
+            position: relative
+        }
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden
+        }
+
+        .carousel-inner>.item {
+            position: relative;
+            display: none;
+            -webkit-transition: .6s ease-in-out left;
+            -o-transition: .6s ease-in-out left;
+            transition: .6s ease-in-out left
+        }
+
+        .carousel-inner>.item>a>img,
+        .carousel-inner>.item>img {
+            line-height: 1
+        }
+
+        @media all and (transform-3d),
+        (-webkit-transform-3d) {
+            .carousel-inner>.item {
+                -webkit-transition: -webkit-transform .6s ease-in-out;
+                -o-transition: -o-transform .6s ease-in-out;
+                transition: transform .6s ease-in-out;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-perspective: 1000px;
+                perspective: 1000px
+            }
+
+            .carousel-inner>.item.active.right,
+            .carousel-inner>.item.next {
+                left: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+
+            .carousel-inner>.item.active.left,
+            .carousel-inner>.item.prev {
+                left: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0)
+            }
+
+            .carousel-inner>.item.active,
+            .carousel-inner>.item.next.left,
+            .carousel-inner>.item.prev.right {
+                left: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .carousel-inner>.active,
+        .carousel-inner>.next,
+        .carousel-inner>.prev {
+            display: block
+        }
+
+        .carousel-inner>.active {
+            left: 0
+        }
+
+        .carousel-inner>.next,
+        .carousel-inner>.prev {
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .carousel-inner>.next {
+            left: 100%
+        }
+
+        .carousel-inner>.prev {
+            left: -100%
+        }
+
+        .carousel-inner>.next.left,
+        .carousel-inner>.prev.right {
+            left: 0
+        }
+
+        .carousel-inner>.active.left {
+            left: -100%
+        }
+
+        .carousel-inner>.active.right {
+            left: 100%
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            background-color: rgba(0, 0, 0, 0);
+            filter: alpha(opacity=50);
+            opacity: .5
+        }
+
+        .carousel-control.left {
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, 0));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+            background-repeat: repeat-x
+        }
+
+        .carousel-control.right {
+            right: 0;
+            left: auto;
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+            background-repeat: repeat-x
+        }
+
+        .carousel-control:focus,
+        .carousel-control:hover {
+            color: #fff;
+            text-decoration: none;
+            filter: alpha(opacity=90);
+            outline: 0;
+            opacity: .9
+        }
+
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next,
+        .carousel-control .icon-prev {
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            display: inline-block;
+            margin-top: -10px
+        }
+
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .icon-prev {
+            left: 50%;
+            margin-left: -10px
+        }
+
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next {
+            right: 50%;
+            margin-right: -10px
+        }
+
+        .carousel-control .icon-next,
+        .carousel-control .icon-prev {
+            width: 20px;
+            height: 20px;
+            font-family: serif;
+            line-height: 1
+        }
+
+        .carousel-control .icon-prev:before {
+            content: '\2039'
+        }
+
+        .carousel-control .icon-next:before {
+            content: '\203a'
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: -30%;
+            text-align: center;
+            list-style: none
+        }
+
+        .carousel-indicators li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #0009;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+        .carousel-indicators .active {
+            width: 12px;
+            height: 12px;
+            margin: 0;
+            background-color: #fff
+        }
+
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 20px;
+            left: 15%;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+        }
+
+        .carousel-caption .btn {
+            text-shadow: none
+        }
+
+        @media screen and (min-width:768px) {
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .glyphicon-chevron-right,
+            .carousel-control .icon-next,
+            .carousel-control .icon-prev {
+                width: 30px;
+                height: 30px;
+                margin-top: -10px;
+                font-size: 30px
+            }
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .icon-prev {
+                margin-left: -10px
+            }
+
+            .carousel-control .glyphicon-chevron-right,
+            .carousel-control .icon-next {
+                margin-right: -10px
+            }
+
+            .carousel-caption {
+                right: 20%;
+                left: 20%;
+                padding-bottom: 30px
+            }
+
+            .carousel-indicators {
+                bottom: 20px
+            }
+        }
+
+        /* start css custom */
+
+        /* end css custom */
+    </style> -->
+    <style type="text/css">
+        .carousel {
+            position: relative
+        }
+
+        .carousel-inner {
+            position: relative;
+            width: 100%;
+            overflow: hidden
+        }
+
+        .carousel-inner>.item {
+            position: relative;
+            display: none;
+            -webkit-transition: .6s ease-in-out left;
+            -o-transition: .6s ease-in-out left;
+            transition: .6s ease-in-out left
+        }
+
+        .carousel-inner>.item>a>img,
+        .carousel-inner>.item>img {
+            line-height: 1
+        }
+
+        @media all and (transform-3d),
+        (-webkit-transform-3d) {
+            .carousel-inner>.item {
+                -webkit-transition: -webkit-transform .6s ease-in-out;
+                -o-transition: -o-transform .6s ease-in-out;
+                transition: transform .6s ease-in-out;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+                -webkit-perspective: 1000px;
+                perspective: 1000px
+            }
+
+            .carousel-inner>.item.active.right,
+            .carousel-inner>.item.next {
+                left: 0;
+                -webkit-transform: translate3d(100%, 0, 0);
+                transform: translate3d(100%, 0, 0)
+            }
+
+            .carousel-inner>.item.active.left,
+            .carousel-inner>.item.prev {
+                left: 0;
+                -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0)
+            }
+
+            .carousel-inner>.item.active,
+            .carousel-inner>.item.next.left,
+            .carousel-inner>.item.prev.right {
+                left: 0;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .carousel-inner>.active,
+        .carousel-inner>.next,
+        .carousel-inner>.prev {
+            display: block
+        }
+
+        .carousel-inner>.active {
+            left: 0
+        }
+
+        .carousel-inner>.next,
+        .carousel-inner>.prev {
+            position: absolute;
+            top: 0;
+            width: 100%
+        }
+
+        .carousel-inner>.next {
+            left: 100%
+        }
+
+        .carousel-inner>.prev {
+            left: -100%
+        }
+
+        .carousel-inner>.next.left,
+        .carousel-inner>.prev.right {
+            left: 0
+        }
+
+        .carousel-inner>.active.left {
+            left: -100%
+        }
+
+        .carousel-inner>.active.right {
+            left: 100%
+        }
+
+        .carousel-control {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 15%;
+            font-size: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+            background-color: rgba(0, 0, 0, 0);
+            filter: alpha(opacity=50);
+            opacity: .5
+        }
+
+        .carousel-control.left {
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(rgba(0, 0, 0, .0001)));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+            background-repeat: repeat-x
+        }
+
+        .carousel-control.right {
+            right: 0;
+            left: auto;
+            background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            background-image: -o-linear-gradient(left, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .0001)), to(rgba(0, 0, 0, .5)));
+            background-image: linear-gradient(to right, rgba(0, 0, 0, .0001) 0, rgba(0, 0, 0, .5) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+            background-repeat: repeat-x
+        }
+
+        .carousel-control:focus,
+        .carousel-control:hover {
+            color: #fff;
+            text-decoration: none;
+            filter: alpha(opacity=90);
+            outline: 0;
+            opacity: .9
+        }
+
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next,
+        .carousel-control .icon-prev {
+            position: absolute;
+            top: 50%;
+            z-index: 5;
+            display: inline-block;
+            margin-top: -10px
+        }
+
+        .carousel-control .glyphicon-chevron-left,
+        .carousel-control .icon-prev {
+            left: 50%;
+            margin-left: -10px
+        }
+
+        .carousel-control .glyphicon-chevron-right,
+        .carousel-control .icon-next {
+            right: 50%;
+            margin-right: -10px
+        }
+
+        .carousel-control .icon-next,
+        .carousel-control .icon-prev {
+            width: 20px;
+            height: 20px;
+            font-family: serif;
+            line-height: 1
+        }
+
+        .carousel-control .icon-prev:before {
+            content: '\2039'
+        }
+
+        .carousel-control .icon-next:before {
+            content: '\203a'
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: -30%;
+            text-align: center;
+            list-style: none
+        }
+
+        .carousel-indicators li {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 1px;
+            text-indent: -999px;
+            cursor: pointer;
+            background-color: #000\9;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 10px
+        }
+
+        .carousel-indicators .active {
+            width: 12px;
+            height: 12px;
+            margin: 0;
+            background-color: #fff
+        }
+
+        .carousel-caption {
+            position: absolute;
+            right: 15%;
+            bottom: 20px;
+            left: 15%;
+            z-index: 10;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .6)
+        }
+
+        .carousel-caption .btn {
+            text-shadow: none
+        }
+
+        @media screen and (min-width:768px) {
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .glyphicon-chevron-right,
+            .carousel-control .icon-next,
+            .carousel-control .icon-prev {
+                width: 30px;
+                height: 30px;
+                margin-top: -10px;
+                font-size: 30px
+            }
+
+            .carousel-control .glyphicon-chevron-left,
+            .carousel-control .icon-prev {
+                margin-left: -10px
+            }
+
+            .carousel-control .glyphicon-chevron-right,
+            .carousel-control .icon-next {
+                margin-right: -10px
+            }
+
+            .carousel-caption {
+                right: 20%;
+                left: 20%;
+                padding-bottom: 30px
+            }
+
+            .carousel-indicators {
+                bottom: 20px
+            }
+        }
+    </style>
+    <!-- end css fish today -->
+</head>
+
+<body>
+    <!-- start script template -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Form Helpers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-formhelpers/2.3.0/js/bootstrap-formhelpers.min.js"
+        integrity="sha256-H7Mu9l17V/M6Q1gDKdv27je+tbS2QnKmoNcFypq/NIQ=" crossorigin="anonymous"></script>
+    <!-- end script template -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-lg">
+
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">
+                <img src="logo-lsV3.svg" width="250" height="50" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="material-icons text-light border-light">
+                    expand_more
+                </i>
+            </button>
+
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item active"> <a class="nav-link text-dark fo" href="list-ikan.html">Market<span
+                                    class="sr-only">(current)</span></a> </li>
+                        <li cla ss="nav-item">
+                            <a class="nav-link text-dark" href="fish-today-list.html">Fish Today</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="open-tender-data-diri.html">Crowd Fishing</a>
+                        </li>
+                        <li>
+                            &nbsp&nbsp&nbsp
+                        </li>
+                    </ul>
+                    <a class="navbar-brand pertama" href="keranjang.html">
+                        <img src="001-shopping-basket.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="transaksi.html">
+                        <img src="002-secure.png" width="30" height="30" alt="">
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <img src="001-user.png" width="40" height="40" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- start content -->
+    <!-- start code fish today -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous" style=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous" style=""></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous" style=""></script> -->
+    <!-- end code fish today -->
+    <nav class="navbar navbar-expand-lg p-0" style="background-color:rgb(0, 82, 136)">
+        <div class="container"> <button class="navbar-toggler navbar-toggler-right border-0 p-0 collapsed" type="button"
+                data-toggle="collapse" data-target="#navbar14" aria-expanded="false" style="">
+                <p class="navbar-brand mb-0 text-white">
+                    <i class="fa fa-newspaper-o d-inline" aria-hidden="true"></i> KATEGORI </p>
+                <i class="material-icons text-light border-light d-inline"> expand_more </i>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar14" style="">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">PEMERINTAH</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">TEKNOLOGI</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">OPINI</a> </li>
+                    <li class="nav-item"> <a class="nav-link text-white" href="#">GAYA HIDUP</a> </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 p-1">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="row mx-auto">
+
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="card mt-2 shadow-lg">
+                        <div class="card-body">
+                            <div class="p-2">
+                                <img id="img-a" class="img-fluid d-block pi-draggable rounded center"
+                                    src="berita-tak-hanya.jpg">
+                            </div>
+                            <div class="border border-grey rounded center shadow-sm">
+                                <h3 class="m-1">
+                                    <a id="judul-a" href="fish-today-berita.html" class="text-dark p-2"> <strong> Tak
+                                            Hanya
+                                            Konsumsi, RI Import Ikan Untuk Bahan Baku Industri</strong></a>
+                                </h3>
+                                <ul class="nav m-3">
+                                    <li><a href="#" id="kategori" class="mx-1"><strong> PEMERINTAH</strong></a></li>
+                                    <li id="waktu-a" class="mx-1"><strong> 2 Jam yang lalu </strong></li>
+                                    <!-- <li id="sumber-a" class="mx-1"><strong> Detik Finance </strong></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card shadow-lg mt-2">
+                        <div class="card-body">
+                            <div class="row pi-draggable w-100 mx-auto py-2" draggable="true">
+                                <div class="col-md-5 p-2">
+                                    <img class="img-fluid d-block rounded" alt="Image" id="img-b"
+                                        src="berita-setahun-pemerintah.jpg">
+                                </div>
+                                <div class="col-md-7">
+                                    <h6 class="p-2">
+                                        <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong>
+                                                Setahun, Pemerintahan Jokowi-JK
+                                                Berantas
+                                                Illegal Fishing, Produksi ikan meningkat</strong></a>
+                                        <br><br><a href="#" id="kategori-b"><strong> PEMERINTAH</strong></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row pi-draggable w-100 mx-auto py-2" draggable="true">
+                                <div class="col-md-5 p-2">
+                                    <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                        src="berita-makan-ikan.png">
+                                </div>
+                                <div class="col-md-7">
+                                    <h6 class="p-2">
+                                        <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong> Makan
+                                                Ikan jenis Ini Bisa
+                                                Memperpanjang
+                                                Usia</strong></a>
+                                        <br><br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="row pi-draggable w-100 mx-auto py-2" draggable="true">
+                                <div class="col-md-5 p-2">
+                                    <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                        src="berita-konsumsi-ikan.png">
+                                </div>
+                                <div class="col-md-7">
+                                    <h6 class="p-2">
+                                        <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong>
+                                                Konsumsi Ikan Beku, Tubuh Tak Dapat
+                                                Gizi
+                                                Sama
+                                                Sekali ?</strong></a>
+                                        <br><br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- start carousel -->
+    <!-- start carousel desktop -->
+    <div class="row pi-draggable mx-auto" draggable="true" id="content-desktop">
+        <div class="col-md-12 p-4">
+            <div class="border border-grey shadow-lg rounded p-3 w-100">
+                <div class="row pi-draggable mx-auto" draggable="true">
+                    <div class="col-md-12 mb-4 center">
+                        <font class="border-bottom border-primary shadow-sm"><strong> BERITA UTAMA </strong></font>
+                    </div>
+                </div>
+                <div class="row pi-draggable mx-auto" draggable="true">
+                    <div class="container-fluid">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item next left">
+                                    <div class="row pi-draggable" draggable="true">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-ikan-kembung.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark"> Ikan
+                                                    Kembung Bahkan Lebih
+                                                    Kaya Gizi dibanding Ikan Salmon</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-semester-i.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark">
+                                                    Semester I 2018, Ekspor
+                                                    perikanan Alami Peningkatan</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable" id="img-c"
+                                                src="berita-hiruk-pikuk.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark">
+                                                    Hiruk-pikuk Akhitifitas
+                                                    Nelayan di TPI Palangpang Ciletuh</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-telkomsel-luncurkan.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html"
+                                                    class="text-dark">Telkomsel
+                                                    Luncurkan
+                                                    Teknologi Pendeteksi Ikan untuk Kapal Nelayan</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">TEKNOLOGI</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item active left">
+                                    <div class="row pi-draggable" draggable="true">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable" id="img-c"
+                                                src="berita-telkomsel-luncurkan.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark">
+                                                    Telkomsel Luncurkan
+                                                    Teknologi Pendeteksi Ikan untuk Kapal Nelayan</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">TEKNOLOGI</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-hiruk-pikuk.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark">
+                                                    Hiruk-pikuk Akhitifitas
+                                                    Nelayan di TPI Palangpang Ciletuh</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-semester-i.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark">
+                                                    Semester I 2018, Ekspor
+                                                    perikanan Alami Peningkatan</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="img-fluid d-block pi-draggable rounded" id="img-c"
+                                                src="berita-ikan-kembung.png" draggable="true">
+                                            <br>
+                                            <h3 class="">
+                                                <a id="judul-c" href="fish-today-berita.html" class="text-dark"> Ikan
+                                                    Kembung Bahkan Lebih
+                                                    Kaya Gizi dibanding Ikan Salmon</a>
+                                            </h3>
+                                            <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span> -->
+                                <span class="carousel-control-prev-icon mt-5" aria-hidden="true"></span>
+                                <span class="sr-only align-middle">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span> -->
+                                <span class="carousel-control-next-icon mt-5" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end carousel desktop -->
+    <!-- start carousel mobile -->
+    <div class="card mt-2 mb-2 shadow-lg" id="content-mobile">
+        <div class="card-body">
+            <div class="col-md-12 mb-4 center">
+                <font class="border-bottom border-primary shadow-sm"> BERITA UTAMA </font>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <!-- <img class="d-block w-100" src="..." alt="First slide"> -->
+                        <img class="img-fluid d-block pi-draggable" id="img-c" src="berita-telkomsel-luncurkan.png"
+                            draggable="true">
+                        <br>
+                        <h3 class="">
+                            <a id="judul-c" href="fish-today-berita.html" class="text-dark"> Telkomsel Luncurkan
+                                Teknologi Pendeteksi Ikan untuk Kapal Nelayan</a>
+                        </h3>
+                        <br><a href="#" id="kategori-c">TEKNOLOGI</a>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img class="d-block w-100" src="..." alt="Second slide"> -->
+                        <img class="img-fluid d-block pi-draggable rounded" id="img-c" src="berita-ikan-kembung.png"
+                            draggable="true">
+                        <br>
+                        <h3 class="">
+                            <a id="judul-c" href="fish-today-berita.html" class="text-dark"> Ikan Kembung Bahkan Lebih
+                                Kaya Gizi dibanding Ikan Salmon</a>
+                        </h3>
+                        <br><a href="#" id="kategori-c">PEMERINTAH</a>
+                    </div>
+                    <div class="carousel-item">
+                        <!-- <img class="d-block w-100" src="..." alt="Third slide"> -->
+                        <img class="img-fluid d-block pi-draggable" id="img-c" src="berita-telkomsel-luncurkan.png"
+                            draggable="true">
+                        <br>
+                        <h3 class="">
+                            <a id="judul-c" href="fish-today-berita.html" class="text-dark"> Telkomsel Luncurkan
+                                Teknologi Pendeteksi Ikan untuk Kapal Nelayan</a>
+                        </h3>
+                        <br><a href="#" id="kategori-c">TEKNOLOGI</a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end carousel mobile -->
+    <!-- end carousel -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-12 mb-4">
+                                <font class="border-bottom border-primary shadow-sm"><strong> TERBARU </strong></font>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-setahun-pemerintah.jpg">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark font-weight-bold">
+                                        Setahun, Pemerintahan
+                                        Jokowi-JK Berantas
+                                        Illegal Fishing, Produksi ikan meningkat</a>
+                                    <br><br><a href="#" id="kategori-b"><strong> PEMERINTAH</strong></a>
+                                    <br><br>
+                                    <p class="text-justify"><strong> Kementerian Kelautan dan Perikanan (KKP) kembali
+                                            akan melakukan penenggelaman
+                                            delapan
+                                            kapal yang tertangkap oleh KKP maupun TNI AL dalam patroli pada Maret dan
+                                            Juni
+                                            2015.
+                                            Penenggelaman rencananya akan dilaksanakan di tiga titik, yakni Aceh,
+                                            Batam,
+                                            dan
+                                            Pontianak.</strong></p>
+                                    <a class="btn btn-sm btn-info" href="#" role="button">Selengkapnya</a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-makan-ikan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark font-weight-bold">
+                                        Makan Ikan jenis Ini
+                                        Bisa
+                                        Memperpanjang Usia</a>
+                                    <br><br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                    <br><br>
+                                    <p><strong> Asam lemak omega 3 yang terkandung dalam ikan membantu mencegah kanker,
+                                            demensia, serta
+                                            penyakit jantung, ungkap para peneliti. Studi yang dipublikasikan dalam
+                                            jurnal
+                                            BMJ ini
+                                            didapat setelah para peneliti menganalisis kondisi darah serta pola makan
+                                            2.622
+                                            pensiunan selama kurang lebih 22 tahun.</strong></p>
+                                    <a class="btn btn-sm btn-info" href="#" role="button">Selengkapnya</a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-konsumsi-ikan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark font-weight-bold">
+                                        Konsumsi Ikan Beku,
+                                        Tubuh Tak
+                                        Dapat Gizi Sama
+                                        Sekali ?</a>
+                                    <br><br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                    <br><br>
+                                    <p><strong> Laporan jurnal berjudul Microbiological Evaluation of Some Heat Treated
+                                            Fish
+                                            Products in
+                                            Egyptian Markets yang dipublikasikan pada laman Ecronicon, Desember 2017
+                                            menulis, ikan
+                                            mengalami perubahan yang tidak diinginkan karena kontaminasi
+                                            mikroba.</strong></p>
+                                    <a class="btn btn-sm btn-info" href="fish-today-berita.html"
+                                        role="button">Selengkapnya</a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-12 mb-4">
+                                <font class="border-bottom border-primary shadow-sm"><strong> TRENDING </strong></font>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable" id="img-b"
+                                    src="berita-setahun-pemerintah.jpg">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong> Setahun,
+                                            Pemerintahan Jokowi-JK
+                                            Berantas
+                                            Illegal Fishing, Produksi ikan meningkat</a></strong>
+                                    <br><a href="#" id="kategori-b"><strong>PEMERINTAH</strong></a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-makan-ikan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong> Makan Ikan
+                                            jenis Ini Bisa Memperpanjang
+                                            Usia</strong></a>
+                                    <br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto" draggable="true">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable" id="img-b" src="berita-konsumsi-ikan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong> Konsumsi
+                                            Ikan Beku, Tubuh Tak Dapat
+                                            Gizi Sama
+                                            Sekali ?</strong></a>
+                                    <br><a href="#" id="kategori-b"><strong> GAYA HIDUP</strong></a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-kkp-akan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="fish-today-berita.html" class="text-dark"><strong> KKP Akan
+                                            Kirimkan 48 Ton Ikan bagi
+                                            Korban Gempa
+                                            Palu</strong></a>
+                                    <br><a href="#" id="kategori-b"><strong> PEMERINTAH</strong></a>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="row pi-draggable mx-auto">
+                            <div class="col-md-5 p-2">
+                                <img class="img-fluid d-block pi-draggable rounded" id="img-b"
+                                    src="berita-kkp-akan.png">
+                            </div>
+                            <div class="col-md-7">
+                                <h6 class="p-2">
+                                    <a id="judul-b" href="#" class="text-dark"><strong> KKP Akan Kirimkan 48 Ton Ikan
+                                            bagi
+                                            Korban Gempa
+                                            Palu</strong></a>
+                                    <br><a href="#" id="kategori-b"><strong> PEMERINTAH</strong></a>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end content -->
+</body>
+
+</html>

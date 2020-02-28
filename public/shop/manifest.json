@@ -1,0 +1,93 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Mariteam",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "https://latihan-firebase-d1f4e.firebaseapp.com/",
+    "short_name": "Mariteam",
+    "theme_color": "transparent",
+    "description": "",
+    "orientation": "any",
+    "background_color": "#f6f6f6",
+    "related_applications": "",
+    "prefer_related_applications": "false",
+    "icons": [
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "44x44"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "1240x600"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "300x300"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "150x150"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "88x88"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "24x24"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "50x50"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "620x300"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "36x36"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "1024x1024"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "180x180"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "152x152"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "icon-mariteam.png",
+            "sizes": "76x76"
+        }
+    ]
+}
